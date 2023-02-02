@@ -90,7 +90,7 @@ var testCases = []testCase{
 	},
 }
 
-func TestShareWith(t *testing.T) {
+func TestTotalAmount(t *testing.T) {
 	for _, tc := range testCases {
 		t.Run(tc.description, func(t *testing.T) {
 			got := TotalAmount(tc.input.productName, tc.input.amount, tc.input.phoneNumber, tc.input.duration)
